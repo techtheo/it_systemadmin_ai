@@ -109,7 +109,7 @@ const showTypingEffect = (rawText, htmlText, messageElement, incomingMessageElem
 
 // Check if the message is related to IT and system administration
 const isITMessage = (message) => {
-    const itKeywords = ["IT", "system administration", "server", "network", "programming", "database", "cloud", "tech","Ai","API","software","application","hardware","debugging","debugg","linux", "windows", "macOS","termux","powershell","bash","script","scripting","security","decryption","domain","encryption","embedded system","system","endpoint","end user", "firewall","gateway","GUI","help desk", "IoT","image","IP address","LAN","ML","malware","OS","troubleshooting","virtualization","virtual","vpn","WAN","data","data analysis","cybersecurity","web development"];
+    const itKeywords = ["IT", "system administration", "server", "network", "programming", "database", "cloud", "tech","Ai","API","software","application","hardware","debugging","debugg","linux", "windows", "macOS","termux","powershell","bash","script","scripting","security","decryption","domain","encryption","embedded system","system","endpoint","end user", "firewall","gateway","GUI","help desk", "IoT","image","IP address","LAN","ML","malware","OS","troubleshooting","virtualization","virtual","vpn","WAN","data","data analysis","cybersecurity","web development","computer","laptop"];
     return itKeywords.some(keyword => message.toLowerCase().includes(keyword.toLowerCase()));
 };
 

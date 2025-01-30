@@ -13,7 +13,8 @@ const GOOGLE_API_KEY = "AIzaSyCKtnlsnrbZS5KziATiHG_mO6pkAumDQD0";
 const API_REQUEST_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${GOOGLE_API_KEY}`;
 
 
-
+// Clear chat history on page reload
+localStorage.removeItem("saved-api-chats");
 
 // Load saved data from local storage
 const loadSavedChatHistory = () => {
